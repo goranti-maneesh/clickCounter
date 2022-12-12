@@ -5,7 +5,7 @@ import {Component} from 'react'
 class ClickCounter extends Component {
   state = {count: 0}
 
-  onIncrment = () => {
+  onIncrement = () => {
     this.setState(prevstate => ({count: prevstate.count + 1}))
   }
 
@@ -18,7 +18,7 @@ class ClickCounter extends Component {
           times
         </h1>
         <p>Click the button to increase the count </p>
-        <button className="btn" type="button" onclick={this.onIncrement}>
+        <button className="btn" type="button" onClick={this.onIncrement}>
           Click Me
         </button>
       </div>
